@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+
+<title>Imagem com efeitos</title>
+<style>
+    p{
+        color: wheat;
+    }
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 20px;
+background-color: rgb(8, 8, 8);
+}
+h1 {
+color: #06730d;
+font-size: 36px;
+}
+.container {
+display: flex;
+gap: 10px;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+.card {
+transition: 0.5s;
+cursor: pointer;
+overflow: hidden;
+border-radius: 10px;
+}
+.card img {
+width: 200px; 
+height: 200px; 
+object-fit: cover; 
+
+border-radius: 10px;
+transition: 0.5s;
+}
+.container:hover > .card:not(:hover) {
+opacity: 0.5;
+
+}
+.card:hover {
+transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">imagens mexendo</h1>
+<p style="text-align: center;">clica nas imagens!</p>
+<div class="container">
+<div class="card"><img src="jesus vs satan.jpeg" alt="Crossover mais importante da historia"></div>
+<div class="card"><img src="filé.jpeg" alt="Imagem 2"></div>
+<div class="card"><img src="Sekiro_Shadows_Die_Twice_capa.png" alt="Imagem 3"></div>
+<div class="card"><img src="jesus ollie.jpeg" alt="Imagem 4"></div>
+<div class="card"><img src="eu sabo.jpeg" alt="Imagem 5"></div>
+
+</div>
+</body>
+</html>
